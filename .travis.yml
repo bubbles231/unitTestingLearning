@@ -3,7 +3,4 @@ python:
   - "3.5"
   - "nightly" # currently points to 3.6-dev
 # command to run tests
-script:
- - if [[ $TRAVIS_PYTHON_VERSION == '3.5' ]]; then python -m unittest discover; fi
- - if [[ $TRAVIS_PYTHON_VERSION == 'nightly' ]]; then python -m unittest discover; fi
-
+script: make test
